@@ -1030,4 +1030,28 @@ footer div {
    
 }
 
+.language-selector {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #151515;
+    padding: 10px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.language-selector img {
+    width: 32px;
+    height: auto;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.language-selector img:hover {
+    transform: scale(1.1);
+}
+
 /*# sourceMappingURL=style.css.map */
