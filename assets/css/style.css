@@ -1054,4 +1054,24 @@ footer div {
     transform: scale(1.1);
 }
 
+/* Ajustes para telas menores */
+@media screen and (max-width: 768px) {
+    .language-selector {
+        top: auto;
+        bottom: 10px;
+        left: 10px;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+        border-radius: 8px;
+    }
+
+    .language-selector img {
+        width: 24px;
+        margin: 0 5px;
+    }
+}
+
 /*# sourceMappingURL=style.css.map */
