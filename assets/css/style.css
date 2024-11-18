@@ -1036,7 +1036,7 @@ footer div {
     left: 0;
     transform: translateY(-50%);
     background-color: #151515;
-    padding: 10px;
+    padding: 5px;
     border-radius: 0 8px 8px 0;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
