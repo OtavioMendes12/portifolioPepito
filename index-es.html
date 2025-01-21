@@ -1,395 +1,274 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Lucas Franco" />
-    <meta
-      name="description"
-      content="Sou Lucas Franco, atleta e preparador físico brasileiro de 20 anos, estou nos Estados Unidos em busca de aperfeiçoamento no esporte."
-    />
-    <meta
-      name="keywords"
-      content="sites, web, desenvolvimento, frontend, Lucas Franco, ui designer, programador, iuricode, front-end, designer, ui, iuri, freelancer, freela, website, portfólio"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#986DFF" />
-    <meta name="copyright" content="Lucas Franco 2024" />
-    <meta http-equiv="content-language" content="pt-br" />
-    <meta
-      property="og:image"
-      content=""
-    />
-    <meta property="og:title" content="Portfólio // Lucas Franco" />
-    <meta property="og:description" content="Portfólio // Lucas Franco" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="assets/image/logo-page.svg"
-      type="image/x-icon"
-    />
-    <link rel="icon" href="assets/image/logo-page.svg" />
-    <link rel="apple-touch-icon" href="assets/image/logo-page.svg" />
-    <link rel="canonical" href="https://iuricode.com/" />
-    <script src="assets/js/svg-inject.min.js"></script>
-    <title>Portfólio // Lucas Franco</title>
-  </head>
+<html lang="pt-BR">
 
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LucasFPerform</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
     <div class="language-selector">
-      <img src="assets/icons/icons8-brasil-48.png" alt="Português" onclick="changeLanguage('pt')">
-      <img src="assets/icons/icons8-eua-48.png" alt="English" onclick="changeLanguage('en')">
-      <img src="assets/icons/icons8-espanha-48.png" alt="Español" onclick="changeLanguage('es')">
-    </div>
-    <header>
-      <div class="grid-layout">
-        <nav>
-          <img
-            src="assets/image/lucas-logo.svg"
-            alt="lucasfperform"
-          />
-          <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-          <ul class="nav-list">
-            <li><a href="" rel="noopener" target="_blank">Blog</a></li>
-            <li><a href="#s-projects" rel="noopener">ElitePro</a></li>
-          </ul>
-        </nav>
+        <img src="images/icons8-brasil-48.png" alt="Português" onclick="changeLanguage('pt')">
+        <img src="images/icons8-eua-48.png" alt="English" onclick="changeLanguage('en')">
+        <img src="images/icons8-espanha-48.png" alt="Español" onclick="changeLanguage('es')">
       </div>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">LUCASFPERFORM</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#services">Servicios</a>
+            <a href="#portfolio">Comunidades</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
-    <main>
-      <section id="s-home">
-        <div class="grid-layout">
-          <div id="home">
-            <div id="home-container-text">
-              <h1 id="primeiro" class="delayMediumReveal">
-                Ayudar a los atletas a desarrollarse
-                <span id="primeiro.2" >de forma moderna y con alta calidad.</span>
-              </h1>
-              <p id="segundo" class="typewriter">
-                ¡Concentración, intensidad y calidad!
-                </p>
-              <a
-                id="terceiro"
-                href="https://wa.me/5531998233835?text=%20Ol%C3%A1%20Lucas%2C%20consegui%20seu%20n%C3%BAmero%20pelo%20o%20seu%20site!"
-                rel="noopener"
-                target="_blank"
-                class="delayExtraBigReveal"
-              >
-              Contáctame
-              </a>
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>LUCAS FRANCO</h1>
+            <p>
+                Ayudar a los deportistas a desarrollarse de forma moderna y de calidad.
+            </p>
+            <p>Actualmente me estoy graduando en Educación Física en Brasil y en Ciencias del Ejercicio en Estados Unidos. Tengo experiencia en gimnasios como preparador físico y entrenador personal, atendiendo diversos objetivos, desde el rendimiento deportivo hasta la salud y la estética.</p>
+
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
             </div>
 
-            <img
-              src="/assets/image/FotoPerfil-removebg-preview.png"
-              alt="ìcone lucasfperform"
-              id="logo"
-              width="500px"
-              height="500px"
-            />
-          </div>
+            <a href="#" class="btn">¿Quieres ser parte?</a>
         </div>
-      </section>
 
-      <section id="s-about">
-        <div class="grid-layout">
-          <div>
-            <div id="creator-photo" class="delayMediumReveal">
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <h3>ATLETA</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <h3>PREPARACIÓN </h3>
+                    <h3>FÍSICA</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <h3>PERSONAL</h3>
+                </div>
+                <div class="circle"></div>
             </div>
-            <div>
-              <h4 id="quarto" class="delayMediumReveal">Quien soy yo</h4>
-              <h2 id="quinto" class="delaySmallReveal">Lucas Franco</h2>
-              <h3 id="sexto" class="delayMediumReveal">
-                Preparador físico y deportista
-              </h3>
 
-              <p id="setimo" class="delayLargeReveal">
-                Mi nombre es Lucas Franco, soy un deportista y preparador físico brasileño de 20 años, 
-                Estoy en Estados Unidos buscando mejorar mi deporte. Actualmente me estoy graduando en Educación Física en Brasil y en Ciencias del Ejercicio en Estados Unidos.
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">¿Quién <span>soy yo?</span></h2>
+            <h3>
+                Mi nombre es Lucas Franco, soy un deportista y preparador físico brasileño de 20 años, estoy en Estados Unidos buscando mejorar mi deporte.
+            </h3>
+            <p>
+                Actualmente me estoy graduando en Educación Física en Brasil y en Ciencias del Ejercicio en Estados Unidos. 
                 Tengo experiencia en gimnasios como preparador físico y entrenador personal, atendiendo diversos objetivos, desde el rendimiento deportivo hasta la salud y la estética.
-                Con experiencia con más de 150 personas, hoy atiendo a clientes en más de 6 países diferentes.
-              </p>
-              <nav class="delayLargeReveal">
-                <ul>
-                  <a
-                    href="https://www.instagram.com/lucasfperform/"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/instagram.svg"
-                        alt="Ícone do Instagram"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-
-                  <a
-                    href="https://w.app/Nk7b1i"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/whatsapp.svg"
-                        alt="Ícone do whatsapp"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-                </ul>
-              </nav>
-            </div>
-          </div>
+                 Con experiencia con más de 150 personas, hoy atiendo clientes en más de 6 países diferentes.
+            </p>
+            
         </div>
-      </section>
+    </section>
 
-      <section id="s-experience">
-        <div class="grid-layout">
-          <h2 id="oitavo" class="delaySmallReveal">Carrera</h2>
-          <div id="experience">
-            <div
-              class="option-experience intervalCardReveal"
-              id="experience-company"
-            >
-              <div class="company digitalhouse activeExperience">
-                <h3 id="nono">Atleta</h3>
-              </div>
-              <div class="company zuplae">
-                <h3 id="decimo" >Entrenador Físico</h3>
-              </div>
-            </div>
-            <div class="text-experience intervalCardReveal">
-              <div>
-                <h4 id="decimoprimeiro" class="titleExperience">
-                    Atleta
-                </h4>
-                <p class="dateExperience"> </p>
-              </div>
-              <h5 id="decimosegundo" class="companyExperience">Atleta</h5>
-              <p id="decimoquarto" class="changeExperience">
-                Comencé a entrenar como deportista desde muy temprana edad, siempre enfocándome en el rendimiento y aprendiendo sobre la disciplina y el trabajo duro.
-                A lo largo de mi carrera jugué en clubes de base de Brasil, como Atlético MG, Ipatinga MG y otros.
-                Hoy continúo este viaje jugando en Estados Unidos, donde aprendo constantemente y busco evolucionar cada día.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Mis <span>servicios</span></h2>
 
-      <section id="s-projects">
-        <div class="grid-layout">
-          <h2 id="decimoquinto" class="delaySmallReveal">Conoce mi comunidad</h2>
-          <div id="projects">
-            <article class="intervalCardReveal teslabank">
-              <h3>ElitePro</h3>
-              <p id="decimosexto" >
-                Elite Pro es una comunidad exclusiva para deportistas dedicados a alcanzar la excelencia en el deporte. 
-                y desarrollo personal. Al reunir a competidores de diferentes disciplinas, Elite Pro ofrece una 
-                espacio para que los deportistas compartan experiencias, entrenen juntos y fomenten el progreso mutuo. 
-                Además de promover eventos y desafíos deportivos, la comunidad se enfoca en el apoyo mutuo, 
-                ofreciendo apoyo para que cada miembro alcance su máximo potencial. Sé parte de la Élite 
-                Pro se suma a una red comprometida con el alto rendimiento, superando límites y generando un impacto positivo en el mundo del deporte.
-              </p>
-            </article>
-          </div>
-          <a
-            id="decimosetimo" 
-            href="https://elitepro.com.br/"
-            rel="noopener"
-            target="_blank"
-            class="delayExtraBigReveal"
-            >Accede a ElitePro</a
-          >
-        </div>
-      </section>
-
-      <section id="s-services">
-        <div class="grid-layout">
-          <h2 id="decimooitavo"  class="delaySmallReveal">Servicios<span>.</span></h2>
-          <div id="services">
-            <article class="intervalCardReveal">
-              <div>
+        <div class="services-container">
+            <div class="services-box">
                 <img
-                  src="assets/icons/icons8-dor-nas-costas-100.png"
+                class='bx bx-code-alt'
+                  src="images/icons8-slim-body-60.png"
                   width="100px"
                   height="100px"
                   alt="ícone layers"
                 />
-              </div>
-              <h3 id="decimonono" >Centrarse en la pérdida de peso</h3>
-              <p id="vinte" >
-                Te ayudamos a conseguir tus objetivos de pérdida de peso de forma saludable y sostenible. 
-                Con un programa personalizado y apoyo continuo, trabajamos para promover hábitos que te ayuden a alcanzar tu peso ideal.
-              </p>
-            </article>
-
-            <article class="intervalCardReveal">
-              <div>
-                <img src="data:image/png;base64,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" alt="flex-biceps">
-              </div>
-              <h3 id="vinteum" >Ganancia de masa muscular</h3>
-              <p id="vintedois" >
-                Desarrolla fuerza y ​​aumenta tu masa muscular con nuestros planes de entrenamiento específicos. 
-                Personalizamos cada sesión para maximizar el crecimiento muscular y mejorar tu rendimiento físico.
-              </p>
-            </article>
-
-            <article class="intervalCardReveal">
-              <div>
+                <h3>Centrarse en la pérdida de peso</h3>
+                <p>Te ayudamos a conseguir tus objetivos de pérdida de peso de forma saludable y sostenible. Con un programa personalizado y soporte continuo.</p>
+                
+            </div>
+            <div class="services-box">
                 <img
-                  src="assets/icons/icons8-raio-100.png"
+                class='bx bxs-paint'
+                  src="images/icons8-flexão-de-biceps-60.png"
                   width="100px"
                   height="100px"
-                  alt="ícone imagem"
+                  alt="ícone layers"
                 />
-              </div>
-              <h3 id="vintetres" >Ganancia de fuerza</h3>
-              <p id="vintequatro" >
-                Fortalece tu cuerpo con ejercicios enfocados a aumentar la fuerza y ​la resistencia. 
-                Nuestro programa es ideal para quienes buscan mejorar su rendimiento físico y superar sus propios límites.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-  
-        <!-- <div class="grid-layout">
-          <div id="skills">
-            <article id="skills-text">
-              <h2 class="delaySmallReveal">Conhecimentos <span>.</span></h2>
-              <p class="delayMediumReveal changeDescription">
-                *passe o cursor do mouse no card para ler*
-              </p>
-            </article>
-
-            <div id="skills-cards">
-              <article class="html intervalCardReveal">
-                <img
-                  src="assets/icons/html.svg"
-                  width="60px"
-                  height="60px"
-                  alt="ícone do html"
-                />
-              </article>
-              <article class="css intervalCardReveal">
-                <img
-                  src="assets/icons/css.svg"
-                  width="60px"
-                  height="60px"
-                  alt="ícone do css"
-                />
-              </article>
-              <article class="js intervalCardReveal">
-                <img
-                  src="assets/icons/javascript.svg"
-                  width="60px"
-                  height="60px"
-                  alt="ícone do javascript"
-                />
-              </article>
-              <article class="sass intervalCardReveal">
-                <img
-                  src="assets/icons/sass.svg"
-                  width="60px"
-                  height="60px"
-                  alt="ícone do sass"
-                />
-              </article>
-              <article class="react intervalCardReveal">
-                <img
-                  src="assets/icons/react.svg"
-                  width="60px"
-                  height="60px"
-                  alt="ícone do react"
-                />
-              </article>
-              <article class="next intervalCardReveal">
-                <img
-                  src="assets/icons/next.svg"
-                  width="60px"
-                  height="60px"
-                  alt="ícone do next"
-                />
-              </article>
-              <article class="styled intervalCardReveal">
-                <img
-                  src="assets/icons/styled-components.svg"
-                  width="60px"
-                  height="60px"
-                  alt="ícone do styled"
-                />
-              </article>
-              <article class="tailwind intervalCardReveal">
-                <img
-                  src="assets/icons/tailwindcss.svg"
-                  width="60px"
-                  height="60px"
-                  alt="ícone do tailwind"
-                />
-              </article>
-
-              <article class="radix intervalCardReveal">
-                <img
-                  src="assets/icons/radix.svg"
-                  width="60px"
-                  height="60px"
-                  alt="ícone do radix"
-                />
-              </article>
-
-              <article class="typescript intervalCardReveal">
-                <img
-                  src="assets/icons/typescript.svg"
-                  width="60px"
-                  height="60px"
-                  alt="ícone do typescript"
-                />
-              </article>
-
-              <article class="storybook intervalCardReveal">
-                <img
-                  src="assets/icons/storybook.svg"
-                  width="60px"
-                  height="60px"
-                  alt="ícone do storybook"
-                />
-              </article>
-
-              <article class="cypress intervalCardReveal">
-                <img
-                  src="assets/icons/cypress.svg"
-                  width="60px"
-                  height="60px"
-                  alt="ícone do cypress"
-                />
-              </article>
+                <h3>Ganancia de masa muscular</h3>
+                <p>Desarrolla fuerza y ​​aumenta tu masa muscular con nuestros planes de entrenamiento específicos. Personalizamos cada sesión para maximizar el crecimiento muscular y mejorar tu rendimiento físico.</p>
+                
             </div>
-          </div>
-        </div> -->
-      </section> 
-      <footer>
-        <div class="grid-layout">
-          <p>
-            Copyright © 2024 site developed by
-            <a href="https://www.otaviomendes.com" rel="noopener" target="_blank">
-              Otávio Mendes
-            </a>
-            Reservados todos los derechos.
-          </p>
+            <div class="services-box">
+                <img
+                class='bx bx-bar-chart-alt'
+                  src="images/icons8-raio-60.png"
+                  width="100px"
+                  height="100px"
+                  alt="ícone layers"
+                />
+                <h3>Ganancia de fuerza</h3>
+                <p>Fortalece tu cuerpo con ejercicios enfocados a aumentar la fuerza y ​​la resistencia. Nuestro programa es ideal para quienes buscan mejorar su rendimiento físico y superar sus propios límites.</p>
+                
+            </div>
         </div>
-      </footer>
-    </main>
+    </section>
 
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Comu<span>nidades</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portifolio1.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>ElitePro</h4>
+                    <p>Elite Pro es una comunidad exclusiva dirigida a deportistas comprometidos con la búsqueda de la excelencia en el deporte y el desarrollo personal. Al reunir a competidores de diferentes disciplinas, Elite Pro ofrece un entorno colaborativo donde los miembros pueden compartir experiencias, entrenar juntos y fomentar el progreso mutuo.
+                    </p>
+                  
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portifolio2.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>BodyMove</h4>
+                    <p>Body Move es una comunidad inclusiva dirigida a quienes quieren mejorar su salud, estética y calidad de vida a través de la práctica de actividades físicas. Ideal para personas que buscan perder peso, ganar masa muscular o simplemente adoptar un estilo de vida más saludable, Body Move ofrece programas personalizados que atienden diferentes objetivos y perfiles.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- testimonial design -->
+    <div class="testimonial-container">
+        <h2 class="heading">Personas que<span>recomiendan</span></h2>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/tata.png" alt="">
+                        <h3>Otávio Mendes</h3>
+                        <p>¡El seguimiento fue increíble! Nunca pensé que podría lograr mis objetivos tan rápido. 
+                            La atención al detalle y el apoyo constante marcaron la diferencia. ¡Lo recomiendo con los ojos cerrados!</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/isleo.png" alt="">
+                        <h3>Otávio Leal</h3>
+                        <p>Como deportista, siempre he buscado a alguien que entienda mis necesidades específicas, 
+                            y aquí encontré exactamente eso. ¡El compromiso y el conocimiento técnico son impresionantes!</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/pezao.png" alt="">
+                        <h3>Gabriel Saldanha
+                        </h3>
+                        <p>La dedicación y el enfoque en los detalles del trabajo son increíbles. Con cada sesión, noto cuánto mejora mi rendimiento. 
+                            ¡Se lo recomiendo a todo aquel que quiera evolucionar de verdad!</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/plinplas.png" alt="">
+                        <h3>Gabriel Policarpo
+                        </h3>
+                        <p>Gracias al apoyo y orientación, pude ganar masa muscular de manera constante sin sentirme abrumado.
+                            La motivación que recibí fue esencial para mantenerme concentrado. ¡Excelente trabajo!</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/mussum.png" alt="">
+                        <h3>João Pedro</h3>
+                        <p>¡Estoy muy satisfecho con los resultados que logré! La planificación se adaptó completamente a mis necesidades, 
+                            y el apoyo durante todo el proceso fue excepcional. ¡Gracias por tu profesionalismo!</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/victor.png" alt="">
+                        <h3>Victor Policarpo</h3>
+                        <p>Con el programa personalizado pude bajar de peso y mejorar mi autoestima de forma saludable y sostenible. El apoyo fue fundamental para que no me diera por vencido a medio camino. ¡Muchas gracias!</p>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Ponte en <span>contacto!</span></h2>
+
+        <form action="https://formspree.io/f/xbllnpeq" method="POST">
+            <div class="input-box">
+                <input type="text" placeholder="Nombre completo" name="nome" id="name">
+                <input type="email" placeholder="Tu mejor correo electrónico" name="email" id="email" >
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Teléfono con código de área" name="telefone" id="number" >
+                <input type="text" placeholder="Idade" name="age" id="idade">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Altura" name="altura" id="altura" >
+                <input type="text" placeholder="Peso" name="peso"  id="peso" >
+            </div>
+            <button type="submit" class="btn">Enviar!</button>
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 | Sitio web desarrollado por Otávio Mendes Todos los derechos reservados.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-    <script type="module" src="assets/js/main-en.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
     <script>
       function changeLanguage(lang) {
           if (lang === 'en') {
@@ -400,6 +279,13 @@
               window.location.href = 'index.html';
           }
       }
-  </script>
-  </body>
+    </script>
+
+    
+
+</body>
+
+
+
+
 </html>
