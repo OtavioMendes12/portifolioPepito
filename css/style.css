@@ -120,7 +120,11 @@ section {
 }
 
 .home .home-content {
-    max-width: 44rem;
+    position: relative; /* Adiciona posicionamento para permitir o uso de 'right' */
+    max-width: 44rem; /* Mantém a largura máxima */
+    right: -250px; /* Ajuste para mover mais para a direita (reduza o valor se for demais) */
+    margin-top: -50px; /* Mantém o deslocamento vertical */
+    
 }
 
 .home-content h3 {
@@ -183,7 +187,7 @@ section {
 .home .profession-container {
     position: absolute;
     top: 50%;
-    right: 0;
+    right: -100px;
     transform: translateY(-50%);
     width: 100vw;
     height: 100vh;
@@ -283,15 +287,16 @@ section {
 }
 
 .home-img img {
-    position: absolute;
-    bottom: 0;
-    right: 40px;
-    pointer-events: none;
-    width: auto; /* Garante que a largura seja calculada automaticamente */
-    height: auto; /* Garante que a altura seja proporcional */
-    max-width: none; /* Remove qualquer restrição de largura máxima */
-    max-height: none; /* Remove qualquer restrição de altura máxima */
-    width: 700px; /* Define uma largura fixa para aumentar a imagem */
+    position: relative; /* Altere de static para relative ou absolute */
+    right: -700px; /* Ajuste o deslocamento à direita */
+    margin-top: -80px; /* Mantém o deslocamento para baixo */
+    pointer-events: none; /* Garante que a imagem não interfira em cliques */
+    
+    width: 900px; /* Define uma largura fixa */
+    height: auto; /* Ajusta automaticamente a altura proporcional à largura */
+    
+    max-width: 100%; /* Garante que a largura não ultrapasse o contêiner */
+    max-height: 100%; /* Garante que a altura não ultrapasse o contêiner */
 }
 
 
@@ -498,9 +503,6 @@ span {
     border-bottom: .8rem solid var(--main-color);
 }
 
-.testimonial-slide img {
-   
-}
 
 .testimonial-slide h3 {
     font-size: 2.5rem;
@@ -679,7 +681,10 @@ span {
     }
 
     .home .home-content {
-        max-width: 50rem;
+        max-width: 80rem;
+        right: 0px; /* Ajuste para mover mais para a direita (reduza o valor se for demais) */
+        margin-top: -50px; /* Mantém o deslocamento vertical */
+
     }
 
     .home .profession-container .profession-box {
@@ -933,6 +938,7 @@ span {
 @media (max-width: 315px) {
     .home-content h1 {
         font-size: 4.5rem;
+        
     }
 }
 img {
