@@ -12,9 +12,9 @@
 }
 
 :root {
-    --bg-color: #fdfdfd;
-    --text-color: #333;
-    --main-color: #3288f1;
+    --bg-color: #141414;
+    --text-color: #fdfdfd;
+    --main-color: #ff5b34;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
 }
@@ -24,11 +24,7 @@
     color: var(--bg-color);
 }
 
-.dark-mode {
-    --bg-color: #0b061f;
-    --text-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .7);
-}
+
 
 html {
     font-size: 62.5%;
@@ -503,12 +499,7 @@ span {
 }
 
 .testimonial-slide img {
-    width: 14rem;
-    height: 14rem;
-    object-fit: cover;
-    border-radius: 50%;
-    border: .5rem solid var(--bg-color);
-    outline: .5rem solid var(--main-color);
+   
 }
 
 .testimonial-slide h3 {
@@ -953,7 +944,7 @@ img {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    background-color: #3288f1;
+    background-color: #ff5b34;
     padding: 5px;
     border-radius: 0 8px 8px 0;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
