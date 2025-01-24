@@ -122,7 +122,7 @@ section {
 .home .home-content {
     position: relative; /* Adiciona posicionamento para permitir o uso de 'right' */
     max-width: 44rem; /* Mantém a largura máxima */
-    right: -250px; /* Ajuste para mover mais para a direita (reduza o valor se for demais) */
+    right: -140px; /* Ajuste para mover mais para a direita (reduza o valor se for demais) */
     margin-top: -50px; /* Mantém o deslocamento vertical */
     
 }
@@ -288,7 +288,7 @@ section {
 
 .home-img img {
     position: relative; /* Altere de static para relative ou absolute */
-    right: -700px; /* Ajuste o deslocamento à direita */
+    right: -400px; /* Ajuste o deslocamento à direita */
     margin-top: -80px; /* Mantém o deslocamento para baixo */
     pointer-events: none; /* Garante que a imagem não interfira em cliques */
     
