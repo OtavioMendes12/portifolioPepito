@@ -122,7 +122,7 @@ section {
 .home .home-content {
     position: relative; /* Adiciona posicionamento para permitir o uso de 'right' */
     max-width: 44rem; /* Mantém a largura máxima */
-    right: -140px; /* Ajuste para mover mais para a direita (reduza o valor se for demais) */
+    right: -40px; /* Ajuste para mover mais para a direita (reduza o valor se for demais) */
     margin-top: -50px; /* Mantém o deslocamento vertical */
     
 }
@@ -288,7 +288,7 @@ section {
 
 .home-img img {
     position: relative; /* Altere de static para relative ou absolute */
-    right: -400px; /* Ajuste o deslocamento à direita */
+    right: -200px; /* Ajuste o deslocamento à direita */
     margin-top: -80px; /* Mantém o deslocamento para baixo */
     pointer-events: none; /* Garante que a imagem não interfira em cliques */
     
@@ -679,8 +679,16 @@ span {
         background: var(--main-color);
         opacity: .7;
     }
+    .home {
+        flex-direction: column; /* Organiza os elementos em coluna */
+        align-items: center; /* Centraliza os itens */
+        padding: 0; /* Remove padding extra */
+        margin: 0; /* Remove margens adicionais */
+    }
+    
 
     .home .home-content {
+        order: 1; /* Garante que o texto fique acima */
         max-width: 80rem;
         right: 0px; /* Ajuste para mover mais para a direita (reduza o valor se for demais) */
         margin-top: -50px; /* Mantém o deslocamento vertical */
@@ -695,8 +703,17 @@ span {
         right: -30%;
     }
 
+    .home-img {
+        order: 2; /* Mantém a imagem abaixo do texto */
+        position: relative; /* Permite deslocar a imagem dentro do contêiner */
+        top: 200px; /* Move a imagem para baixo */
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+    }
+
     .home-img img {
-        display: none;
+        max-width: 100%; /* Ajusta o tamanho da imagem no mobile */
+        height: auto; /* Mantém a proporção */
     }
 
     .footer {
@@ -780,7 +797,6 @@ span {
     }
 
     .home {
-        padding: 0 3% 23rem;
         justify-content: center;
         text-align: center;
     }
